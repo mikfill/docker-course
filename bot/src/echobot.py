@@ -2,9 +2,8 @@
 This is a echo bot.
 It echoes any incoming text messages.
 """
-
 from aiogram import Bot, Dispatcher, types
-from src.settings import BOT_TOKEN
+from bot.src.settings import BOT_TOKEN
 
 
 # Initialize bot and dispatcher
@@ -24,5 +23,4 @@ async def send_welcome(message: types.Message):
 async def echo(message: types.Message):
     # old style:
     # await bot.send_message(message.chat.id, message.text)
-
     await message.answer(message.text)

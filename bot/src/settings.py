@@ -3,7 +3,7 @@ import os
 
 from dotenv import load_dotenv
 
-logging.basicConfig(format="%(levelname)s:%(message)s", level=logging.WARNING)
+logging.basicConfig(format="%(levelname)s:%(message)s", level=logging.DEBUG)
 load_dotenv()
 
 try:
